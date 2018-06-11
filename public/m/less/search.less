@@ -1,0 +1,41 @@
+@import "base.less";
+
+
+.search-history {
+    .title {
+        padding: 10px;
+        span {
+            font-size: 12px;
+            color: #666;
+        }
+        a {
+            font-size: 12px;
+            color: #666;
+        }
+    }
+    .content {
+        padding: 10px;
+        ul {
+            border: 1px solid #ccc;
+            li {
+                border-bottom: 1px solid #ccc;
+                position: relative;
+                &:last-child {
+                    border-bottom: 0;
+                }
+                a{
+                    font-size: 12px;
+                    color: #666;
+                    line-height: 30px;
+                    padding-left: 15px;
+                    .btn-delete {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+}
