@@ -89,6 +89,14 @@ img {
     img {
         width: 100%;
     }
+    .product-name {
+        /* 控制只显示2行文字对于隐藏 */
+        overflow: hidden;  
+        text-overflow: ellipsis;  
+        display: -webkit-box;  
+        -webkit-line-clamp: 2;  
+        -webkit-box-orient: vertical;  
+    }
     .product-price {
         font-size: 12px;
         .new-name {

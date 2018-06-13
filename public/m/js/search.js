@@ -50,7 +50,7 @@ Letao.prototype = {
             }
             window.localStorage.setItem('searchData',JSON.stringify(arr));
             letao.queryHistory();
-            window.location.href = 'productlist.html';
+            window.location.href = 'productlist.html?search='+search;
            
 
         })
@@ -76,8 +76,7 @@ Letao.prototype = {
         
         $('.content').on('click','.btn-delete',function () {  
             var id = $(this).data('id');
-            // console.log(this);
-            console.log(id);
+            // console.log(id);
             var arr = window.localStorage.getItem('searchData');
             if (arr && JSON.parse(arr).length > 0){
                 arr = JSON.parse(arr);
